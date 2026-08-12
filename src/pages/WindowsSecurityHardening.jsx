@@ -2,7 +2,7 @@ import ReactMarkdown from "react-markdown";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
-import writeup from "../writeups/windows-security-hardening.md?raw";
+import writeup from "../Writeups/windows-security-hardening.md?raw";
 
 function WindowsSecurityHardening() {
   return (
