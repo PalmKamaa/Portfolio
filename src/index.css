@@ -101,6 +101,56 @@ button {
   color: var(--accent);
 }
 
+/* mobile nav toggle */
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--muted);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* mobile menu closed by default */
+.nav-links.open {
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 72px;
+    right: 8%;
+    background: rgba(10, 17, 24, 0.95);
+    border: 1px solid var(--border);
+    padding: 14px 18px;
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 180px;
+    box-shadow: 0 8px 24px rgba(2, 6, 12, 0.6);
+    z-index: 1001;
+  }
+
+  .nav-links a {
+    color: var(--text);
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  /* make navbar padding smaller on mobile to fit */
+  .navbar {
+    padding: 0 6%;
+    height: 65px;
+  }
+}
+
 /* =========================================================
    HERO / HOME
 ========================================================= */

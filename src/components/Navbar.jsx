@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Shield } from "lucide-react";
+import { Shield, Menu, X } from "lucide-react";
 
 function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <Link to="/" className="logo">
@@ -12,7 +15,15 @@ function Navbar() {
         </span>
       </Link>
 
-      <div className="nav-links">
+      <button
+        className="nav-toggle"
+        aria-label={open ? "Close navigation" : "Open navigation"}
+        onClick={() => setOpen((v) => !v)}
+      >
+        {open ? <X size={20} /> : <Menu size={20} />}
+      </button>
+
+      <div className={`nav-links ${open ? "open" : ""}`} onClick={() => setOpen(false)}>
         <Link to="/about">About</Link>
         <Link to="/skills">Skills</Link>
         <Link to="/projects">Projects</Link>
