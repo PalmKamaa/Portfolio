@@ -1,7 +1,7 @@
 import {
   ArrowUpRight,
   Shield,
-  Network,
+  Search,
 } from "lucide-react";
 
 import { Link } from "react-router-dom";
@@ -12,8 +12,10 @@ const writeups = [
     number: "01",
     category: "WINDOWS SECURITY",
     title: "Windows Security Hardening",
+
     description:
       "A practical examination of Windows endpoint hardening focused on reducing attack surface, strengthening access controls, securing network exposure, improving endpoint protection and increasing visibility through security logging.",
+
     tags: [
       "Windows",
       "Endpoint Security",
@@ -22,25 +24,34 @@ const writeups = [
       "Firewall",
       "Security Logging",
     ],
+
     icon: Shield,
     status: "PUBLISHED",
+
     path: "/writeups/windows-security-hardening",
   },
 
+
   {
     number: "02",
-    category: "NETWORK SECURITY",
-    title: "Network Traffic Analysis with Wireshark",
+    category: "NETWORK TRAFFIC INVESTIGATION",
+    title: "Carnage — Network Traffic Incident Investigation",
+
     description:
-      "A practical investigation into network traffic using packet capture and analysis techniques to understand communication patterns, inspect protocols and identify potentially suspicious activity.",
+      "A PCAP-based incident investigation using Wireshark to reconstruct a suspected workstation compromise, identify malicious file delivery, trace suspicious infrastructure and extract actionable indicators of compromise.",
+
     tags: [
       "Wireshark",
-      "TCP/IP",
-      "Packet Analysis",
-      "Network Security",
+      "PCAP Analysis",
+      "Incident Response",
+      "C2 Detection",
+      "IOC Analysis",
     ],
-    icon: Network,
-    status: "COMING SOON",
+
+    icon: Search,
+    status: "PUBLISHED",
+
+    path: "/writeups/carnage-network-investigation",
   },
 ];
 
@@ -49,7 +60,9 @@ function Writeups() {
   return (
     <section className="writeups-page">
 
-      {/* HEADER */}
+      {/* =========================
+          HEADER
+      ========================= */}
 
       <div className="page-header">
 
@@ -71,7 +84,9 @@ function Writeups() {
       </div>
 
 
-      {/* WRITEUPS */}
+      {/* =========================
+          WRITEUPS
+      ========================= */}
 
       <div className="writeups-container">
 
@@ -137,23 +152,13 @@ function Writeups() {
                 </div>
 
 
-                {writeup.status === "PUBLISHED" ? (
-
-                  <Link
-                    to={writeup.path}
-                    className="writeup-link"
-                  >
-                    Read Technical Writeup
-                    <ArrowUpRight size={16} />
-                  </Link>
-
-                ) : (
-
-                  <span className="writeup-coming">
-                    Documentation in progress
-                  </span>
-
-                )}
+                <Link
+                  to={writeup.path}
+                  className="writeup-link"
+                >
+                  Read Technical Writeup
+                  <ArrowUpRight size={16} />
+                </Link>
 
               </div>
 

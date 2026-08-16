@@ -6505,3 +6505,735 @@ ol {
     scroll-behavior: auto !important;
   }
 }
+/* =========================================================
+   CARNAGE NETWORK INVESTIGATION
+========================================================= */
+
+.investigation-section {
+  margin-top: 65px;
+}
+
+.investigation-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.investigation-icon {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: var(--accent);
+
+  background: rgba(34, 211, 238, 0.07);
+
+  border: 1px solid rgba(34, 211, 238, 0.15);
+
+  border-radius: 8px;
+}
+
+.investigation-label {
+  margin: 0 0 5px;
+
+  color: var(--accent);
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 9px;
+
+  letter-spacing: 1.2px;
+}
+
+.investigation-heading h2 {
+  margin: 0;
+
+  border: none;
+
+  padding: 0;
+
+  font-size: 25px;
+}
+
+
+/* =========================================================
+   INVESTIGATION TEXT
+========================================================= */
+
+.investigation-section p {
+  color: var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.9;
+
+  margin-bottom: 20px;
+}
+
+.investigation-section strong {
+  color: #dce5ea;
+}
+
+
+/* =========================================================
+   INVESTIGATION GRID
+========================================================= */
+
+.investigation-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+
+  margin: 25px 0;
+}
+
+.investigation-card {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  padding: 18px;
+
+  background: rgba(255, 255, 255, 0.018);
+
+  border: 1px solid var(--border);
+
+  border-radius: 7px;
+}
+
+.investigation-card span {
+  color: #596771;
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+.investigation-card strong {
+  color: #aebbc3;
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 12px;
+
+  font-weight: 500;
+}
+
+.investigation-card small {
+  color: #65727c;
+
+  font-size: 10px;
+}
+
+
+/* =========================================================
+   EVIDENCE HIGHLIGHT
+========================================================= */
+
+.evidence-highlight {
+  margin: 25px 0;
+
+  padding: 18px 20px;
+
+  overflow-x: auto;
+
+  background: rgba(34, 211, 238, 0.035);
+
+  border: 1px solid rgba(34, 211, 238, 0.14);
+
+  border-left: 3px solid var(--accent);
+
+  border-radius: 5px;
+
+  color: var(--accent);
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   COMMAND / WIRESHARK FILTER BLOCK
+========================================================= */
+
+.command-block {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin: 25px 0;
+
+  padding: 17px;
+
+  background: #03070a;
+
+  border: 1px solid var(--border);
+
+  border-radius: 7px;
+
+  overflow-x: auto;
+}
+
+.command-block code {
+  display: block;
+
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+
+  color: #8fa5b2;
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+
+  white-space: pre-wrap;
+
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   FINDING CALLOUT
+========================================================= */
+
+.finding-callout {
+  display: flex;
+
+  gap: 14px;
+
+  margin: 30px 0;
+
+  padding: 18px 20px;
+
+  background: rgba(34, 211, 238, 0.035);
+
+  border: 1px solid rgba(34, 211, 238, 0.13);
+
+  border-radius: 7px;
+}
+
+.finding-callout > svg {
+  flex-shrink: 0;
+
+  margin-top: 2px;
+
+  color: var(--accent);
+}
+
+.finding-callout strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #dce5ea;
+
+  font-size: 13px;
+}
+
+.finding-callout p {
+  margin: 0;
+
+  color: #7f8d97;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   TAG LIST
+========================================================= */
+
+.tag-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin: 22px 0 28px;
+}
+
+.tag-list span {
+  padding: 7px 9px;
+
+  color: #8c9aa4;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  border-radius: 4px;
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   IOC GRID
+========================================================= */
+
+.ioc-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 10px;
+
+  margin: 25px 0;
+}
+
+.ioc-card {
+  padding: 19px;
+
+  background: rgba(255, 255, 255, 0.018);
+
+  border: 1px solid var(--border);
+
+  border-radius: 7px;
+}
+
+.ioc-card span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #596771;
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 8px;
+
+  letter-spacing: 1px;
+}
+
+.ioc-card strong {
+  display: block;
+
+  color: #aebbc3;
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  word-break: break-word;
+}
+
+.ioc-card small {
+  display: block;
+
+  margin-top: 7px;
+
+  color: #65727c;
+
+  font-size: 10px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   IOC LIST
+========================================================= */
+
+.ioc-list {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  margin: 25px 0;
+
+  border: 1px solid var(--border);
+
+  border-radius: 7px;
+
+  overflow: hidden;
+}
+
+.ioc-list div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  padding: 16px 18px;
+
+  background: rgba(255, 255, 255, 0.012);
+
+  border-bottom: 1px solid var(--border);
+
+  border-right: 1px solid var(--border);
+}
+
+.ioc-list div:nth-child(even) {
+  border-right: none;
+}
+
+.ioc-list div:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+.ioc-list span {
+  color: #596771;
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 8px;
+
+  letter-spacing: 0.8px;
+}
+
+.ioc-list strong {
+  color: #aebbc3;
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 11px;
+
+  font-weight: 500;
+
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.timeline {
+  position: relative;
+
+  margin: 30px 0;
+
+  padding-left: 25px;
+
+  border-left: 1px solid rgba(34, 211, 238, 0.18);
+}
+
+.timeline-item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: 105px 1fr;
+
+  gap: 20px;
+
+  padding: 0 0 30px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  left: -29px;
+  top: 5px;
+
+  background: var(--accent);
+
+  border-radius: 50%;
+
+  box-shadow: 0 0 10px rgba(34, 211, 238, 0.25);
+}
+
+.timeline-item > span {
+  color: var(--accent);
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 9px;
+
+  line-height: 1.6;
+}
+
+.timeline-item strong {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #d5dfe4;
+
+  font-size: 13px;
+}
+
+.timeline-item p {
+  margin: 0;
+
+  color: #737f89;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   LISTS
+========================================================= */
+
+.investigation-section ul,
+.investigation-section ol {
+  margin: 20px 0 30px;
+
+  padding-left: 25px;
+}
+
+.investigation-section li {
+  margin-bottom: 11px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+.investigation-section ol li::marker {
+  color: var(--accent);
+
+  font-family: "JetBrains Mono", monospace;
+}
+
+
+/* =========================================================
+   BLOCKQUOTE
+========================================================= */
+
+.investigation-section blockquote {
+  margin: 30px 0;
+
+  padding: 18px 20px;
+
+  background: rgba(255, 255, 255, 0.018);
+
+  border-left: 2px solid var(--accent);
+
+  border-radius: 0 5px 5px 0;
+}
+
+.investigation-section blockquote p {
+  margin: 0;
+
+  color: #8c99a3;
+
+  font-size: 12px;
+
+  line-height: 1.8;
+
+  font-style: italic;
+}
+
+
+/* =========================================================
+   AI DISCLOSURE
+========================================================= */
+
+.ai-disclosure {
+  padding: 25px;
+
+  background: rgba(255, 255, 255, 0.012);
+
+  border: 1px solid var(--border);
+
+  border-radius: 8px;
+}
+
+.ai-note {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 6px;
+
+  margin-top: 22px;
+
+  padding: 14px 16px;
+
+  background: rgba(34, 211, 238, 0.025);
+
+  border: 1px dashed rgba(34, 211, 238, 0.16);
+
+  border-radius: 5px;
+
+  color: #65727c;
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 9px;
+
+  line-height: 1.7;
+}
+
+.ai-note strong {
+  color: #8b9aa4;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   FINAL ASSESSMENT
+========================================================= */
+
+.final-assessment {
+  margin-top: 75px;
+
+  padding: 32px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(34, 211, 238, 0.045),
+      rgba(255, 255, 255, 0.008)
+    );
+
+  border: 1px solid rgba(34, 211, 238, 0.15);
+
+  border-radius: 9px;
+}
+
+.final-assessment h2 {
+  margin: 10px 0 20px;
+
+  padding: 0;
+
+  border: none;
+
+  font-size: clamp(24px, 4vw, 32px);
+
+  line-height: 1.25;
+}
+
+.final-assessment h2 span {
+  color: var(--accent);
+}
+
+.final-assessment p:not(.section-label) {
+  color: #89959e;
+
+  font-size: 13px;
+
+  line-height: 1.85;
+}
+
+.final-actions {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-top: 25px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid var(--border);
+}
+
+.final-actions .back-link {
+  margin: 0;
+}
+
+
+/* =========================================================
+   CARNAGE MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .investigation-section {
+    margin-top: 50px;
+  }
+
+  .investigation-heading {
+    align-items: flex-start;
+  }
+
+  .investigation-heading h2 {
+    font-size: 21px;
+  }
+
+  .investigation-grid,
+  .ioc-grid,
+  .ioc-list {
+    grid-template-columns: 1fr;
+  }
+
+  .ioc-list div {
+    border-right: none;
+  }
+
+  .ioc-list div:nth-last-child(-n + 2) {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .ioc-list div:last-child {
+    border-bottom: none;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+
+    gap: 5px;
+
+    padding-bottom: 25px;
+  }
+
+  .timeline-item::before {
+    left: -24px;
+  }
+
+  .final-assessment {
+    padding: 23px;
+  }
+
+  .final-actions {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+}

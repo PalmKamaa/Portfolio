@@ -11,6 +11,7 @@ import WriteupsPage from "./pages/WriteupsPage";
 import CertificationsPage from "./pages/CertificationsPage";
 import ContactPage from "./pages/ContactPage";
 import WindowsSecurityHardening from "./pages/WindowsSecurityHardening";
+import CarnageNetworkInvestigation from "./pages/CarnageNetworkInvestigation";
 
 function App() {
   return (
@@ -20,15 +21,13 @@ function App() {
       <main>
         <Routes>
           <Route path="/writeups/windows-security-hardening" element={<WindowsSecurityHardening />} />
+          <Route path="/writeups/carnage-network-investigation" element={<CarnageNetworkInvestigation />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/writeups" element={<WriteupsPage />} />
-          <Route
-            path="/certifications"
-            element={<CertificationsPage />}
-          />
+          <Route path="/certifications" element={<CertificationsPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
