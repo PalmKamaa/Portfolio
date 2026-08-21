@@ -53,6 +53,24 @@ const writeups = [
 
     path: "/writeups/carnage-network-investigation",
   },
+  {
+  number: "03",
+  category: "WINDOWS INCIDENT RESPONSE",
+  title: "Investigating a Compromised Windows Server",
+  description:
+    "A host-based incident investigation reconstructing attacker activity through Windows accounts, scheduled tasks, security events, credential-access artifacts, hosts-file manipulation, IIS content and firewall configuration.",
+  tags: [
+    "Windows",
+    "Incident Response",
+    "Digital Forensics",
+    "PowerShell",
+    "IOC Analysis",
+    "Persistence",
+  ],
+  icon: Search,
+  status: "PUBLISHED",
+  path: "/writeups/investigating-windows",
+},
 ];
 
 
